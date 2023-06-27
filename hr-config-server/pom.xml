@@ -8,7 +8,7 @@
 		<version>2.3.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.devsuperior</groupId>
+	<groupId>com.devsuperior.hr-config-server</groupId>
 	<artifactId>hr-config-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>hr-config-server</name>
@@ -20,12 +20,6 @@
 	</properties>
 
 	<dependencies>
-
-		<dependency>
-    		<groupId>com.thoughtworks.xstream</groupId>
-    		<artifactId>xstream</artifactId>
-    		<version>1.4.20</version>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-config-server</artifactId>
