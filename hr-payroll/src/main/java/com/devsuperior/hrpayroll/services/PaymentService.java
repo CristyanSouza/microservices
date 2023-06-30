@@ -14,8 +14,11 @@ public class PaymentService {
 	private WorkerFeignClient workerFeignClient;
 
 	public Payment getPayment(long workerId, int days) {
-				
+				System.out.println("TESTE 2");				
 		Worker worker = workerFeignClient.findById(workerId).getBody();
+				System.out.println("TESTE 3");
+
+		
 		return new Payment(worker.getName(), worker.getDailyIncome(), days);
 	}
 }
