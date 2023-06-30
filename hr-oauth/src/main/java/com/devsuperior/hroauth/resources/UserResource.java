@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.devsuperior.hroauth.entities.User;
 import com.devsuperior.hroauth.services.UserService;
 
-
 @RestController
 @RequestMapping(value = "/users")
 public class UserResource {
@@ -19,15 +18,14 @@ public class UserResource {
 	@Autowired
 	private UserService service;
 	
-
-	@GetMapping("/search")
-	public ResponseEntity<User> findByEmail(@RequestParam String email){	
-		try{
-		User obj = service.findByEmail(email);
-		return ResponseEntity.ok().body(obj);
-		} catch( IllegalArgumentException ex){
+	@GetMapping(value = "/search")
+	public ResponseEntity<User> findByEmail(@RequestParam String email) {
+		try {
+			User user = service.findByEmail(email);
+			return ResponseEntity.ok(user);
+		}
+		catch (IllegalArgumentException e) {
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
 		}
 	}
-
 }

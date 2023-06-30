@@ -18,19 +18,15 @@ public class PaymentResource {
 	@Autowired
 	private PaymentService service;
 	
-	//@HystrixCommand(fallbackMethod = "getPaymentError")
+	@HystrixCommand(fallbackMethod = "getPaymentAlternative")
 	@GetMapping(value = "/{workerId}/days/{days}")
 	public ResponseEntity<Payment> getPayment(@PathVariable Long workerId, @PathVariable Integer days) {
-		System.out.println("TESTE 1");
 		Payment payment = service.getPayment(workerId, days);
-				System.out.println("TESTE 4");
-
 		return ResponseEntity.ok(payment);
 	}	
 	
-	//public ResponseEntity<Payment> getPaymentError(Long workerId, Integer days) {
-	//	Payment payment = new Payment("", 0.0, 0);
-//
-//		return ResponseEntity.badRequest().body(payment);
-//	}
+	public ResponseEntity<Payment> getPaymentAlternative(Long workerId, Integer days) {
+		Payment payment = new Payment("", 0.0, 0);
+		return ResponseEntity.badRequest().body(payment);
+	}
 }
