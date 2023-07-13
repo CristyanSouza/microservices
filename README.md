@@ -61,7 +61,7 @@ O resultado dos endpoints será o seguinte:
 
 <h1 align="center"> Considerações finais </h1>
 
-Se trata de um projeto bastante simples, mas que me trouxe bastante conhecimento novo, principalmente sobre o conceito de microserviços e alguns componentes do Spring Cloud como o Eureka, Zuul e Feign Client
+Se trata de um projeto bastante simples, mas que me agregou bastante conhecimento novo, principalmente sobre o conceito de microserviços e alguns componentes do Spring Cloud como o Eureka, Zuul e Feign Client
 
 
 
