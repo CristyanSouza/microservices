@@ -44,7 +44,7 @@ Form:
 
 ![image](https://github.com/CristyanSouza/microservices/assets/104795862/87968126-95a4-4ddd-9165-15709e0bb983)
 
-Para login podem ser utilizados os e-mails user@gmail.com ou adm@gmail.com com a senha 123456
+Para login podem ser utilizados os e-mails op@gmail.com ou adm@gmail.com com a senha 123456
 
 A resposta da requisição será o token JWT para enviar no header de cada requisição no padrão "Bearer + token", os endpoints a serem acessados são os seguintes:
 <br>
