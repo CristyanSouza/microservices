@@ -31,13 +31,13 @@ Após isso já será possível rodar os demais projetos que irão se registrar n
 
 ## 🧭 Utilizando a aplicação
 
-Para se autenticar será preciso enviar uma requisição para o seguinte endpoint com os parâmetros:
+Para se autenticar será preciso enviar uma requisição para o seguinte endpoint com os parâmetros: <br>
 
-POST http://localhost:8765/hr-oauth/oauth/token
-Header: Content-Type application/x-www-form-urlencoded
-Basic Auth: 
-  -Username - myappname123
-  -Password - myappsecret123
+POST http://localhost:8765/hr-oauth/oauth/token <br>
+Header: Content-Type application/x-www-form-urlencoded <br>
+Basic Auth: <br>
+  -Username - myappname123 <br>
+  -Password - myappsecret123 <br>
 
 Form:
 
@@ -46,9 +46,9 @@ Form:
 Para login podem ser utilizados os e-mails user@gmail.com ou adm@gmail.com com a senha 123456
 
 A resposta da requisição será o token JWT para enviar no header de cada requisição no padrão "Bearer + token", os endpoints a serem acessados são os seguintes:
-
-GET http://localhost:8765/hr-worker/workers - Para obter todos os workers
-GET http://localhost:8765/hr-worker/workers/{id} - Para obter um trabalhador específico
+<br>
+GET http://localhost:8765/hr-worker/workers - Para obter todos os workers<br>
+GET http://localhost:8765/hr-worker/workers/{id} - Para obter um trabalhador específico<br>
 
 GET http://localhost:8765/hr-payroll/payments/{workerId}/days/{days} - Receber o pagamento do colaborador com base na quantidade de dias 
 
