@@ -24,9 +24,9 @@ Ambos os serviços, assim como o serviço de autenticação e autorização e o 
 
 <h1 align="center"> 🚀 Como executar o projeto </h1>
 
-Para utilizar o projeto primeiramente é preciso rodar os serviços que possuem porta fixa, que são:
--hr-config-server (serviço de configurações centralizadas apontando para o repositório https://github.com/CristyanSouza/ms-course-configs)
--hr-eureka-server (servidor discovery)
+Para utilizar o projeto primeiramente é preciso rodar os serviços que possuem porta fixa, que são:<br>
+-hr-config-server (serviço de configurações centralizadas apontando para o repositório https://github.com/CristyanSouza/ms-course-configs)<br>
+-hr-eureka-server (servidor discovery)<br>
 
 Após isso já será possível rodar os demais projetos que irão se registrar no servidor Eureka.
 
