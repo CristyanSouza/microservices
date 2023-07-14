@@ -42,7 +42,7 @@ Basic Auth: <br>
 
 Form:
 
-![Texto Alternativo](/assets/form.png)
+![Formulario de login](/assets/form.png)
 
 Para login podem ser utilizados os e-mails op@gmail.com ou adm@gmail.com com a senha 123456
 
@@ -55,8 +55,8 @@ GET http://localhost:8765/hr-payroll/payments/{workerId}/days/{days} - Receber o
 
 O resultado dos endpoints será o seguinte:
 
-![image](https://github.com/CristyanSouza/microservices/assets/104795862/88e4655f-f55f-491a-bf24-bded5994839a)
-![image](https://github.com/CristyanSouza/microservices/assets/104795862/b7282fb4-753b-4c72-a9bd-32bba11e1b51)
+![Worker](/assets/worker.png)
+![Paymens](/assets/payments.png)
 
 
 <h1 align="center"> Considerações finais </h1>
