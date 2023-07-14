@@ -42,7 +42,7 @@ Basic Auth: <br>
 
 Form:
 
-![image](https://github.com/CristyanSouza/microservices/assets/104795862/87968126-95a4-4ddd-9165-15709e0bb983)
+![Texto Alternativo](/assets/form.png)
 
 Para login podem ser utilizados os e-mails op@gmail.com ou adm@gmail.com com a senha 123456
 
